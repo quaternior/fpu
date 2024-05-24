@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="13994941fs"></ZoomStartTime>
+      <ZoomEndTime time="14001012fs"></ZoomEndTime>
+      <Cursor1Time time="14000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="175"></NameColumnWidth>
+      <ValueColumnWidth column_width="195"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="17" />
+   <wvobject fp_name="/tb/A_sign" type="logic">
+      <obj_property name="ElementShortName">A_sign</obj_property>
+      <obj_property name="ObjectShortName">A_sign</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/A_exp" type="array">
+      <obj_property name="ElementShortName">A_exp[7:0]</obj_property>
+      <obj_property name="ObjectShortName">A_exp[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/A_frac" type="array">
+      <obj_property name="ElementShortName">A_frac[22:0]</obj_property>
+      <obj_property name="ObjectShortName">A_frac[22:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/B_sign" type="logic">
+      <obj_property name="ElementShortName">B_sign</obj_property>
+      <obj_property name="ObjectShortName">B_sign</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/B_exp" type="array">
+      <obj_property name="ElementShortName">B_exp[7:0]</obj_property>
+      <obj_property name="ObjectShortName">B_exp[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/B_frac" type="array">
+      <obj_property name="ElementShortName">B_frac[22:0]</obj_property>
+      <obj_property name="ObjectShortName">B_frac[22:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/sign" type="logic">
+      <obj_property name="ElementShortName">sign</obj_property>
+      <obj_property name="ObjectShortName">sign</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/exp" type="array">
+      <obj_property name="ElementShortName">exp[7:0]</obj_property>
+      <obj_property name="ObjectShortName">exp[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/frac" type="array">
+      <obj_property name="ElementShortName">frac[23:0]</obj_property>
+      <obj_property name="ObjectShortName">frac[23:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/error" type="logic">
+      <obj_property name="ElementShortName">error</obj_property>
+      <obj_property name="ObjectShortName">error</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/overflow" type="logic">
+      <obj_property name="ElementShortName">overflow</obj_property>
+      <obj_property name="ObjectShortName">overflow</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/result_bit" type="array">
+      <obj_property name="ElementShortName">result_bit[31:0]</obj_property>
+      <obj_property name="ObjectShortName">result_bit[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/r" type="array">
+      <obj_property name="ElementShortName">r[31:0]</obj_property>
+      <obj_property name="ObjectShortName">r[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/i" type="array">
+      <obj_property name="ElementShortName">i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">i[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/continue" type="logic">
+      <obj_property name="ElementShortName">continue</obj_property>
+      <obj_property name="ObjectShortName">continue</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/A" type="array">
+      <obj_property name="ElementShortName">A[31:0]</obj_property>
+      <obj_property name="ObjectShortName">A[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/B" type="array">
+      <obj_property name="ElementShortName">B[31:0]</obj_property>
+      <obj_property name="ObjectShortName">B[31:0]</obj_property>
+   </wvobject>
+</wave_config>
