@@ -1,6 +1,7 @@
 `define exp_max 255
 `define exp_bias 127
 module FMUL(
+    input clk,
 	input A_sign,
 	input [7:0] A_exp,
 	input [22:0] A_frac,
@@ -15,7 +16,6 @@ module FMUL(
     output overflow
     );
     wire [47:0] partial_frac;
-    
     wire [8:0] exp_buffer;
     reg primal;
     reg [7:0] primal_exp;
