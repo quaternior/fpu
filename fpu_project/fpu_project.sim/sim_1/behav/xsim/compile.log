@@ -1,6 +1,0 @@
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/2024-1/System_Semiconductor_Design/fpu/FMUL.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module FMUL
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/2024-1/System_Semiconductor_Design/fpu/mult.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module mult
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/2024-1/System_Semiconductor_Design/fpu/tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module tb
