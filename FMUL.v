@@ -27,7 +27,7 @@ module FMUL(
     wire B_is_inf = &B_exp & ~|B_frac;
     wire B_is_zero = ~|B_exp;
     
-    // Check NaN, inf, 0x`
+    // Check NaN, inf, 0
     always@(*) begin
         // 1. Exception cases handling
         // inf * inf = inf
@@ -70,7 +70,8 @@ module FMUL(
     end
     // 2. Fraction multiplying
     mult partial_prod(partial_frac, {1'b1, A_frac}, {1'b1, B_frac});
-
+    wire [47:0] partial_frac_correct;
+    mult_correct partial_prod_correct(partial_frac_correct, {1'b1, A_frac}, {1'b1, B_frac});
     // 3. Assign
     assign sign = A_sign ^ B_sign;
     // For sufficient number of space. If underflow occurs, put 0.

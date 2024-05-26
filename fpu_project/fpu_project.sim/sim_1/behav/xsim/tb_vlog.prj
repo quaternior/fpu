@@ -1,7 +1,11 @@
 # compile verilog/system verilog design source files
 verilog xil_defaultlib  \
 "../../../../../FMUL.v" \
+"../../../../../adder.v" \
+"../../../../../fulladder.v" \
+"../../../../../halfadder.v" \
 "../../../../../mult.v" \
+"../../../../../mult_correct.v" \
 "../../../../../tb.v" \
 
 # compile glbl module
