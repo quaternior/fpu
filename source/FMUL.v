@@ -86,5 +86,5 @@ module FMUL(
             : (overflow) ? 0
             : (exp_buffer==0) ? 0
             : (partial_frac[47]) ? partial_frac[46:23] : partial_frac[45:22];
-    assign overflow = (exp_buffer >= `exp_max) ? 1 : 0;
+    assign overflow = exp_buffer[8];
 endmodule

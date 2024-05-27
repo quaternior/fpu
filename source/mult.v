@@ -8,6 +8,8 @@
 // endmodule
 
 // Target cycle : 5 cycle
+
+// Wallace tree
 module mult(
     output [47:0] product,
     input [23:0] A, B
