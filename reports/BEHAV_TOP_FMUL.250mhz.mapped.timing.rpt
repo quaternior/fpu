@@ -1,0 +1,138 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : TOP_FMUL
+Version: Q-2019.12-SP5-5
+Date   : Sat May 25 18:14:55 2024
+****************************************
+
+Operating Conditions: ff1p16v125c   Library: saed32rvt_ff1p16v125c
+Wire Load Model Mode: enclosed
+
+  Startpoint: A_reg[1] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Y_reg[22] (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  TOP_FMUL           8000                  saed32rvt_ff1p16v125c
+  mult_DW02_mult_0   8000                  saed32rvt_ff1p16v125c
+  mult_DW01_add_0_DW01_add_1
+                     8000                  saed32rvt_ff1p16v125c
+  FMUL               8000                  saed32rvt_ff1p16v125c
+  FMUL_DW01_add_0    ForQA                 saed32rvt_ff1p16v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  A_reg[1]/CLK (DFFX1_RVT)                                0.00       0.00 r
+  A_reg[1]/Q (DFFX1_RVT)                                  0.08       0.08 f
+  FMUL0/A_frac[1] (FMUL)                                  0.00       0.08 f
+  FMUL0/partial_prod/A[1] (mult)                          0.00       0.08 f
+  FMUL0/partial_prod/mult_6/A[1] (mult_DW02_mult_0)       0.00       0.08 f
+  FMUL0/partial_prod/mult_6/U94/Y (NBUFFX2_RVT)           0.03       0.11 f
+  FMUL0/partial_prod/mult_6/U436/Y (AND2X1_RVT)           0.03       0.14 f
+  FMUL0/partial_prod/mult_6/U5/Y (XOR2X1_RVT)             0.05       0.18 r
+  FMUL0/partial_prod/mult_6/S2_2_21/CO (FADDX1_RVT)       0.04       0.22 r
+  FMUL0/partial_prod/mult_6/S2_3_21/CO (FADDX1_RVT)       0.04       0.26 r
+  FMUL0/partial_prod/mult_6/S2_4_21/S (FADDX1_RVT)        0.06       0.32 f
+  FMUL0/partial_prod/mult_6/S2_5_20/S (FADDX1_RVT)        0.05       0.37 r
+  FMUL0/partial_prod/mult_6/S2_6_19/S (FADDX1_RVT)        0.06       0.43 f
+  FMUL0/partial_prod/mult_6/S2_7_18/S (FADDX1_RVT)        0.05       0.48 r
+  FMUL0/partial_prod/mult_6/S2_8_17/S (FADDX1_RVT)        0.06       0.54 f
+  FMUL0/partial_prod/mult_6/S2_9_16/S (FADDX1_RVT)        0.05       0.59 r
+  FMUL0/partial_prod/mult_6/S2_10_15/S (FADDX1_RVT)       0.06       0.65 f
+  FMUL0/partial_prod/mult_6/S2_11_14/S (FADDX1_RVT)       0.05       0.70 r
+  FMUL0/partial_prod/mult_6/S2_12_13/S (FADDX1_RVT)       0.06       0.76 f
+  FMUL0/partial_prod/mult_6/S2_13_12/S (FADDX1_RVT)       0.05       0.82 r
+  FMUL0/partial_prod/mult_6/S2_14_11/S (FADDX1_RVT)       0.06       0.87 f
+  FMUL0/partial_prod/mult_6/S2_15_10/S (FADDX1_RVT)       0.05       0.93 r
+  FMUL0/partial_prod/mult_6/S2_16_9/S (FADDX1_RVT)        0.06       0.98 f
+  FMUL0/partial_prod/mult_6/S2_17_8/S (FADDX1_RVT)        0.05       1.04 r
+  FMUL0/partial_prod/mult_6/S2_18_7/S (FADDX1_RVT)        0.06       1.10 f
+  FMUL0/partial_prod/mult_6/S2_19_6/S (FADDX1_RVT)        0.05       1.15 r
+  FMUL0/partial_prod/mult_6/S2_20_5/S (FADDX1_RVT)        0.06       1.21 f
+  FMUL0/partial_prod/mult_6/S2_21_4/S (FADDX1_RVT)        0.05       1.26 r
+  FMUL0/partial_prod/mult_6/S2_22_3/S (FADDX1_RVT)        0.06       1.32 f
+  FMUL0/partial_prod/mult_6/S4_2/S (FADDX1_RVT)           0.05       1.37 r
+  FMUL0/partial_prod/mult_6/U6/Y (XOR2X1_RVT)             0.04       1.42 f
+  FMUL0/partial_prod/mult_6/FS_1/A[23] (mult_DW01_add_0_DW01_add_1)
+                                                          0.00       1.42 f
+  FMUL0/partial_prod/mult_6/FS_1/U133/Y (NAND2X0_RVT)     0.02       1.44 r
+  FMUL0/partial_prod/mult_6/FS_1/U20/Y (INVX1_RVT)        0.01       1.45 f
+  FMUL0/partial_prod/mult_6/FS_1/U125/Y (AO21X1_RVT)      0.03       1.48 f
+  FMUL0/partial_prod/mult_6/FS_1/U110/Y (AO21X1_RVT)      0.02       1.50 f
+  FMUL0/partial_prod/mult_6/FS_1/U109/Y (AO21X1_RVT)      0.02       1.52 f
+  FMUL0/partial_prod/mult_6/FS_1/U108/Y (AO21X1_RVT)      0.03       1.54 f
+  FMUL0/partial_prod/mult_6/FS_1/U103/Y (AOI21X1_RVT)     0.03       1.58 r
+  FMUL0/partial_prod/mult_6/FS_1/U98/Y (OA21X1_RVT)       0.03       1.61 r
+  FMUL0/partial_prod/mult_6/FS_1/U93/Y (OA21X1_RVT)       0.03       1.64 r
+  FMUL0/partial_prod/mult_6/FS_1/U88/Y (OA21X1_RVT)       0.03       1.67 r
+  FMUL0/partial_prod/mult_6/FS_1/U83/Y (OA21X1_RVT)       0.03       1.70 r
+  FMUL0/partial_prod/mult_6/FS_1/U78/Y (OA21X1_RVT)       0.03       1.73 r
+  FMUL0/partial_prod/mult_6/FS_1/U73/Y (OA21X1_RVT)       0.03       1.76 r
+  FMUL0/partial_prod/mult_6/FS_1/U68/Y (OA21X1_RVT)       0.03       1.79 r
+  FMUL0/partial_prod/mult_6/FS_1/U63/Y (OA21X1_RVT)       0.03       1.82 r
+  FMUL0/partial_prod/mult_6/FS_1/U58/Y (OA21X1_RVT)       0.03       1.85 r
+  FMUL0/partial_prod/mult_6/FS_1/U53/Y (OA21X1_RVT)       0.03       1.88 r
+  FMUL0/partial_prod/mult_6/FS_1/U48/Y (OA21X1_RVT)       0.03       1.91 r
+  FMUL0/partial_prod/mult_6/FS_1/U43/Y (OA21X1_RVT)       0.03       1.94 r
+  FMUL0/partial_prod/mult_6/FS_1/U38/Y (OA21X1_RVT)       0.03       1.97 r
+  FMUL0/partial_prod/mult_6/FS_1/U33/Y (OA21X1_RVT)       0.03       2.00 r
+  FMUL0/partial_prod/mult_6/FS_1/U31/Y (OA21X1_RVT)       0.03       2.03 r
+  FMUL0/partial_prod/mult_6/FS_1/U29/Y (AND2X1_RVT)       0.02       2.05 r
+  FMUL0/partial_prod/mult_6/FS_1/U28/Y (OA22X1_RVT)       0.03       2.08 r
+  FMUL0/partial_prod/mult_6/FS_1/U27/Y (XNOR2X1_RVT)      0.05       2.13 r
+  FMUL0/partial_prod/mult_6/FS_1/SUM[45] (mult_DW01_add_0_DW01_add_1)
+                                                          0.00       2.13 r
+  FMUL0/partial_prod/mult_6/PRODUCT[47] (mult_DW02_mult_0)
+                                                          0.00       2.13 r
+  FMUL0/partial_prod/Y[47] (mult)                         0.00       2.13 r
+  FMUL0/add_1_root_add_78_2/CI (FMUL_DW01_add_0)          0.00       2.13 r
+  FMUL0/add_1_root_add_78_2/U13/Y (AO22X1_RVT)            0.03       2.16 r
+  FMUL0/add_1_root_add_78_2/U12/Y (OR2X1_RVT)             0.03       2.19 r
+  FMUL0/add_1_root_add_78_2/U11/Y (AO22X1_RVT)            0.03       2.21 r
+  FMUL0/add_1_root_add_78_2/U10/Y (OR2X1_RVT)             0.03       2.24 r
+  FMUL0/add_1_root_add_78_2/U9/Y (AO22X1_RVT)             0.03       2.26 r
+  FMUL0/add_1_root_add_78_2/U8/Y (OR2X1_RVT)              0.03       2.29 r
+  FMUL0/add_1_root_add_78_2/U7/Y (AO22X1_RVT)             0.03       2.31 r
+  FMUL0/add_1_root_add_78_2/U6/Y (OR2X1_RVT)              0.03       2.34 r
+  FMUL0/add_1_root_add_78_2/U5/Y (AO22X1_RVT)             0.03       2.37 r
+  FMUL0/add_1_root_add_78_2/U4/Y (OR2X1_RVT)              0.03       2.39 r
+  FMUL0/add_1_root_add_78_2/U3/Y (AO22X1_RVT)             0.03       2.42 r
+  FMUL0/add_1_root_add_78_2/U2/Y (OR2X1_RVT)              0.03       2.44 r
+  FMUL0/add_1_root_add_78_2/U1/Y (AO22X1_RVT)             0.03       2.47 r
+  FMUL0/add_1_root_add_78_2/U1_7/S (FADDX1_RVT)           0.05       2.52 f
+  FMUL0/add_1_root_add_78_2/SUM[7] (FMUL_DW01_add_0)      0.00       2.52 f
+  FMUL0/U29/Y (OR2X1_RVT)                                 0.03       2.55 f
+  FMUL0/U91/Y (NAND2X0_RVT)                               0.02       2.58 r
+  FMUL0/U10/Y (INVX1_RVT)                                 0.01       2.59 f
+  FMUL0/U71/Y (AND4X1_RVT)                                0.04       2.62 f
+  FMUL0/U72/Y (AO21X1_RVT)                                0.03       2.65 f
+  FMUL0/U7/Y (NOR2X1_RVT)                                 0.04       2.68 r
+  FMUL0/U6/Y (AND3X1_RVT)                                 0.02       2.71 r
+  FMUL0/U3/Y (NBUFFX2_RVT)                                0.03       2.73 r
+  FMUL0/U28/Y (AO222X1_RVT)                               0.05       2.79 r
+  FMUL0/frac[23] (FMUL)                                   0.00       2.79 r
+  Y_reg[22]/D (DFFX1_RVT)                                 0.00       2.79 r
+  data arrival time                                                  2.79
+
+  clock clk (rise edge)                                   4.00       4.00
+  clock network delay (ideal)                             0.00       4.00
+  Y_reg[22]/CLK (DFFX1_RVT)                               0.00       4.00 r
+  library setup time                                     -0.02       3.98
+  data required time                                                 3.98
+  --------------------------------------------------------------------------
+  data required time                                                 3.98
+  data arrival time                                                 -2.79
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.19
+
+
+1

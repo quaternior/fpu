@@ -8,9 +8,14 @@ Starting simulation data flow analysis
 WARNING: [XSIM 43-4100] "D:/2024-1/System_Semiconductor_Design/midproject/fpu/fpu_project/fpu_project.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.adder
 Compiling module xil_defaultlib.ha
 Compiling module xil_defaultlib.fa
+Compiling module xil_defaultlib.rca_4b_default
+Compiling module xil_defaultlib.csa_8b
+Compiling module xil_defaultlib.csa_16b
+Compiling module xil_defaultlib.csa_32b
+Compiling module xil_defaultlib.adder
+Compiling module xil_defaultlib.adder_correct
 Compiling module xil_defaultlib.mult
 Compiling module xil_defaultlib.mult_correct
 Compiling module xil_defaultlib.FMUL

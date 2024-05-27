@@ -1,0 +1,239 @@
+Warning: Design 'TOP_FMUL' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : TOP_FMUL
+Version: Q-2019.12-SP5-5
+Date   : Sun May 26 23:45:23 2024
+****************************************
+
+Operating Conditions: ff1p16v125c   Library: saed32rvt_ff1p16v125c
+Wire Load Model Mode: enclosed
+
+  Startpoint: A_reg[5] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Y_reg[22] (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  TOP_FMUL           16000                 saed32rvt_ff1p16v125c
+  mult               16000                 saed32rvt_ff1p16v125c
+  fa_481             ForQA                 saed32rvt_ff1p16v125c
+  fa_307             ForQA                 saed32rvt_ff1p16v125c
+  fa_191             ForQA                 saed32rvt_ff1p16v125c
+  fa_115             ForQA                 saed32rvt_ff1p16v125c
+  adder_DW01_add_0_DW01_add_1
+                     ForQA                 saed32rvt_ff1p16v125c
+  FMUL               16000                 saed32rvt_ff1p16v125c
+  FMUL_DW01_add_0    ForQA                 saed32rvt_ff1p16v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  A_reg[5]/CLK (DFFX1_RVT)                                0.00       0.00 r
+  A_reg[5]/Q (DFFX1_RVT)                                  0.10       0.10 f
+  FMUL0/A_frac[5] (FMUL)                                  0.00       0.10 f
+  FMUL0/partial_prod/A[5] (mult)                          0.00       0.10 f
+  FMUL0/partial_prod/U9/Y (AND2X1_RVT)                    0.04       0.14 f
+  FMUL0/partial_prod/fa_L1_10/A (fa_481)                  0.00       0.14 f
+  FMUL0/partial_prod/fa_L1_10/ha0/A (ha_962)              0.00       0.14 f
+  FMUL0/partial_prod/fa_L1_10/ha0/U1/Y (XOR2X1_RVT)       0.05       0.19 r
+  FMUL0/partial_prod/fa_L1_10/ha0/sum (ha_962)            0.00       0.19 r
+  FMUL0/partial_prod/fa_L1_10/ha1/A (ha_961)              0.00       0.19 r
+  FMUL0/partial_prod/fa_L1_10/ha1/U2/Y (AND2X1_RVT)       0.02       0.21 r
+  FMUL0/partial_prod/fa_L1_10/ha1/cout (ha_961)           0.00       0.21 r
+  FMUL0/partial_prod/fa_L1_10/U1/Y (OR2X1_RVT)            0.02       0.24 r
+  FMUL0/partial_prod/fa_L1_10/cout (fa_481)               0.00       0.24 r
+  FMUL0/partial_prod/fa_L2_8/B (fa_307)                   0.00       0.24 r
+  FMUL0/partial_prod/fa_L2_8/ha0/B (ha_614)               0.00       0.24 r
+  FMUL0/partial_prod/fa_L2_8/ha0/U1/Y (XOR2X1_RVT)        0.05       0.28 f
+  FMUL0/partial_prod/fa_L2_8/ha0/sum (ha_614)             0.00       0.28 f
+  FMUL0/partial_prod/fa_L2_8/ha1/A (ha_613)               0.00       0.28 f
+  FMUL0/partial_prod/fa_L2_8/ha1/U1/Y (XOR2X1_RVT)        0.05       0.33 r
+  FMUL0/partial_prod/fa_L2_8/ha1/sum (ha_613)             0.00       0.33 r
+  FMUL0/partial_prod/fa_L2_8/sum (fa_307)                 0.00       0.33 r
+  FMUL0/partial_prod/fa_L3_5/B (fa_191)                   0.00       0.33 r
+  FMUL0/partial_prod/fa_L3_5/ha0/B (ha_382)               0.00       0.33 r
+  FMUL0/partial_prod/fa_L3_5/ha0/U1/Y (XOR2X1_RVT)        0.05       0.38 f
+  FMUL0/partial_prod/fa_L3_5/ha0/sum (ha_382)             0.00       0.38 f
+  FMUL0/partial_prod/fa_L3_5/ha1/A (ha_381)               0.00       0.38 f
+  FMUL0/partial_prod/fa_L3_5/ha1/U1/Y (AND2X1_RVT)        0.02       0.40 f
+  FMUL0/partial_prod/fa_L3_5/ha1/cout (ha_381)            0.00       0.40 f
+  FMUL0/partial_prod/fa_L3_5/U1/Y (OR2X1_RVT)             0.02       0.42 f
+  FMUL0/partial_prod/fa_L3_5/cout (fa_191)                0.00       0.42 f
+  FMUL0/partial_prod/fa_L4_5/A (fa_115)                   0.00       0.42 f
+  FMUL0/partial_prod/fa_L4_5/ha0/A (ha_230)               0.00       0.42 f
+  FMUL0/partial_prod/fa_L4_5/ha0/U1/Y (XOR2X1_RVT)        0.05       0.47 r
+  FMUL0/partial_prod/fa_L4_5/ha0/sum (ha_230)             0.00       0.47 r
+  FMUL0/partial_prod/fa_L4_5/ha1/A (ha_229)               0.00       0.47 r
+  FMUL0/partial_prod/fa_L4_5/ha1/U1/Y (XOR2X1_RVT)        0.04       0.51 f
+  FMUL0/partial_prod/fa_L4_5/ha1/sum (ha_229)             0.00       0.51 f
+  FMUL0/partial_prod/fa_L4_5/sum (fa_115)                 0.00       0.51 f
+  FMUL0/partial_prod/ha_L5_4/B (ha_1038)                  0.00       0.51 f
+  FMUL0/partial_prod/ha_L5_4/U1/Y (XOR2X1_RVT)            0.04       0.56 r
+  FMUL0/partial_prod/ha_L5_4/sum (ha_1038)                0.00       0.56 r
+  FMUL0/partial_prod/ha_L6_3/B (ha_1024)                  0.00       0.56 r
+  FMUL0/partial_prod/ha_L6_3/U1/Y (XOR2X1_RVT)            0.05       0.60 f
+  FMUL0/partial_prod/ha_L6_3/sum (ha_1024)                0.00       0.60 f
+  FMUL0/partial_prod/ha_L7_2/B (ha_1006)                  0.00       0.60 f
+  FMUL0/partial_prod/ha_L7_2/U1/Y (XOR2X1_RVT)            0.04       0.64 r
+  FMUL0/partial_prod/ha_L7_2/sum (ha_1006)                0.00       0.64 r
+  FMUL0/partial_prod/adder_inst/B[1] (adder)              0.00       0.64 r
+  FMUL0/partial_prod/adder_inst/add_7/B[1] (adder_DW01_add_0_DW01_add_1)
+                                                          0.00       0.64 r
+  FMUL0/partial_prod/adder_inst/add_7/U26/Y (OA21X1_RVT)
+                                                          0.02       0.67 r
+  FMUL0/partial_prod/adder_inst/add_7/U25/Y (AO22X1_RVT)
+                                                          0.03       0.69 r
+  FMUL0/partial_prod/adder_inst/add_7/U24/Y (OR2X1_RVT)
+                                                          0.03       0.72 r
+  FMUL0/partial_prod/adder_inst/add_7/U23/Y (AO22X1_RVT)
+                                                          0.03       0.75 r
+  FMUL0/partial_prod/adder_inst/add_7/U22/Y (OR2X1_RVT)
+                                                          0.03       0.77 r
+  FMUL0/partial_prod/adder_inst/add_7/U21/Y (AO22X1_RVT)
+                                                          0.03       0.80 r
+  FMUL0/partial_prod/adder_inst/add_7/U20/Y (OR2X1_RVT)
+                                                          0.03       0.82 r
+  FMUL0/partial_prod/adder_inst/add_7/U19/Y (AO22X1_RVT)
+                                                          0.03       0.85 r
+  FMUL0/partial_prod/adder_inst/add_7/U18/Y (OR2X1_RVT)
+                                                          0.03       0.87 r
+  FMUL0/partial_prod/adder_inst/add_7/U17/Y (AO22X1_RVT)
+                                                          0.03       0.90 r
+  FMUL0/partial_prod/adder_inst/add_7/U16/Y (OR2X1_RVT)
+                                                          0.03       0.93 r
+  FMUL0/partial_prod/adder_inst/add_7/U15/Y (AO22X1_RVT)
+                                                          0.03       0.95 r
+  FMUL0/partial_prod/adder_inst/add_7/U14/Y (OR2X1_RVT)
+                                                          0.03       0.98 r
+  FMUL0/partial_prod/adder_inst/add_7/U13/Y (AO22X1_RVT)
+                                                          0.03       1.00 r
+  FMUL0/partial_prod/adder_inst/add_7/U12/Y (OR2X1_RVT)
+                                                          0.03       1.03 r
+  FMUL0/partial_prod/adder_inst/add_7/U11/Y (AO22X1_RVT)
+                                                          0.03       1.05 r
+  FMUL0/partial_prod/adder_inst/add_7/U10/Y (OR2X1_RVT)
+                                                          0.03       1.08 r
+  FMUL0/partial_prod/adder_inst/add_7/U9/Y (AO22X1_RVT)
+                                                          0.03       1.11 r
+  FMUL0/partial_prod/adder_inst/add_7/U8/Y (OR2X1_RVT)
+                                                          0.03       1.13 r
+  FMUL0/partial_prod/adder_inst/add_7/U7/Y (AO22X1_RVT)
+                                                          0.03       1.16 r
+  FMUL0/partial_prod/adder_inst/add_7/U6/Y (OR2X1_RVT)
+                                                          0.03       1.18 r
+  FMUL0/partial_prod/adder_inst/add_7/U5/Y (AO22X1_RVT)
+                                                          0.03       1.21 r
+  FMUL0/partial_prod/adder_inst/add_7/U4/Y (OR2X1_RVT)
+                                                          0.03       1.23 r
+  FMUL0/partial_prod/adder_inst/add_7/U3/Y (AO22X1_RVT)
+                                                          0.03       1.26 r
+  FMUL0/partial_prod/adder_inst/add_7/U2/Y (OR2X1_RVT)
+                                                          0.03       1.29 r
+  FMUL0/partial_prod/adder_inst/add_7/U1/Y (AO22X1_RVT)
+                                                          0.03       1.31 r
+  FMUL0/partial_prod/adder_inst/add_7/U1_14/CO (FADDX1_RVT)
+                                                          0.04       1.35 r
+  FMUL0/partial_prod/adder_inst/add_7/U1_15/CO (FADDX1_RVT)
+                                                          0.04       1.39 r
+  FMUL0/partial_prod/adder_inst/add_7/U1_16/CO (FADDX1_RVT)
+                                                          0.04       1.43 r
+  FMUL0/partial_prod/adder_inst/add_7/U1_17/CO (FADDX1_RVT)
+                                                          0.04       1.46 r
+  FMUL0/partial_prod/adder_inst/add_7/U1_18/CO (FADDX1_RVT)
+                                                          0.04       1.50 r
+  FMUL0/partial_prod/adder_inst/add_7/U1_19/CO (FADDX1_RVT)
+                                                          0.04       1.54 r
+  FMUL0/partial_prod/adder_inst/add_7/U1_20/CO (FADDX1_RVT)
+                                                          0.04       1.58 r
+  FMUL0/partial_prod/adder_inst/add_7/U1_21/CO (FADDX1_RVT)
+                                                          0.04       1.62 r
+  FMUL0/partial_prod/adder_inst/add_7/U1_22/CO (FADDX1_RVT)
+                                                          0.04       1.65 r
+  FMUL0/partial_prod/adder_inst/add_7/U1_23/CO (FADDX1_RVT)
+                                                          0.04       1.69 r
+  FMUL0/partial_prod/adder_inst/add_7/U1_24/CO (FADDX1_RVT)
+                                                          0.04       1.73 r
+  FMUL0/partial_prod/adder_inst/add_7/U1_25/CO (FADDX1_RVT)
+                                                          0.04       1.77 r
+  FMUL0/partial_prod/adder_inst/add_7/U1_26/CO (FADDX1_RVT)
+                                                          0.04       1.80 r
+  FMUL0/partial_prod/adder_inst/add_7/U1_27/CO (FADDX1_RVT)
+                                                          0.04       1.84 r
+  FMUL0/partial_prod/adder_inst/add_7/U1_28/CO (FADDX1_RVT)
+                                                          0.04       1.88 r
+  FMUL0/partial_prod/adder_inst/add_7/U1_29/CO (FADDX1_RVT)
+                                                          0.04       1.92 r
+  FMUL0/partial_prod/adder_inst/add_7/U1_30/CO (FADDX1_RVT)
+                                                          0.04       1.96 r
+  FMUL0/partial_prod/adder_inst/add_7/U1_31/CO (FADDX1_RVT)
+                                                          0.04       1.99 r
+  FMUL0/partial_prod/adder_inst/add_7/U1_32/CO (FADDX1_RVT)
+                                                          0.04       2.03 r
+  FMUL0/partial_prod/adder_inst/add_7/U1_33/CO (FADDX1_RVT)
+                                                          0.04       2.07 r
+  FMUL0/partial_prod/adder_inst/add_7/U1_34/CO (FADDX1_RVT)
+                                                          0.04       2.11 r
+  FMUL0/partial_prod/adder_inst/add_7/U1_35/CO (FADDX1_RVT)
+                                                          0.04       2.15 r
+  FMUL0/partial_prod/adder_inst/add_7/U1_36/CO (FADDX1_RVT)
+                                                          0.04       2.18 r
+  FMUL0/partial_prod/adder_inst/add_7/U1_37/CO (FADDX1_RVT)
+                                                          0.04       2.22 r
+  FMUL0/partial_prod/adder_inst/add_7/U1_38/CO (FADDX1_RVT)
+                                                          0.04       2.26 r
+  FMUL0/partial_prod/adder_inst/add_7/U1_39/S (FADDX1_RVT)
+                                                          0.04       2.30 r
+  FMUL0/partial_prod/adder_inst/add_7/SUM[39] (adder_DW01_add_0_DW01_add_1)
+                                                          0.00       2.30 r
+  FMUL0/partial_prod/adder_inst/sum[39] (adder)           0.00       2.30 r
+  FMUL0/partial_prod/product[47] (mult)                   0.00       2.30 r
+  FMUL0/add_1_root_add_78_2/CI (FMUL_DW01_add_0)          0.00       2.30 r
+  FMUL0/add_1_root_add_78_2/U13/Y (AO22X1_RVT)            0.03       2.33 r
+  FMUL0/add_1_root_add_78_2/U12/Y (OR2X1_RVT)             0.03       2.35 r
+  FMUL0/add_1_root_add_78_2/U11/Y (AO22X1_RVT)            0.03       2.38 r
+  FMUL0/add_1_root_add_78_2/U10/Y (OR2X1_RVT)             0.03       2.40 r
+  FMUL0/add_1_root_add_78_2/U9/Y (AO22X1_RVT)             0.03       2.43 r
+  FMUL0/add_1_root_add_78_2/U8/Y (OR2X1_RVT)              0.03       2.46 r
+  FMUL0/add_1_root_add_78_2/U7/Y (AO22X1_RVT)             0.03       2.48 r
+  FMUL0/add_1_root_add_78_2/U6/Y (OR2X1_RVT)              0.03       2.51 r
+  FMUL0/add_1_root_add_78_2/U5/Y (AO22X1_RVT)             0.03       2.53 r
+  FMUL0/add_1_root_add_78_2/U4/Y (OR2X1_RVT)              0.03       2.56 r
+  FMUL0/add_1_root_add_78_2/U3/Y (AO22X1_RVT)             0.03       2.59 r
+  FMUL0/add_1_root_add_78_2/U2/Y (OR2X1_RVT)              0.03       2.61 r
+  FMUL0/add_1_root_add_78_2/U1/Y (AO22X1_RVT)             0.03       2.64 r
+  FMUL0/add_1_root_add_78_2/U1_7/S (FADDX1_RVT)           0.05       2.69 f
+  FMUL0/add_1_root_add_78_2/SUM[7] (FMUL_DW01_add_0)      0.00       2.69 f
+  FMUL0/U28/Y (OR2X1_RVT)                                 0.03       2.72 f
+  FMUL0/U91/Y (NAND2X0_RVT)                               0.02       2.74 r
+  FMUL0/U19/Y (INVX1_RVT)                                 0.01       2.75 f
+  FMUL0/U54/Y (AND4X1_RVT)                                0.04       2.79 f
+  FMUL0/U55/Y (AO21X1_RVT)                                0.03       2.82 f
+  FMUL0/U6/Y (NOR2X1_RVT)                                 0.04       2.85 r
+  FMUL0/U81/Y (AND3X1_RVT)                                0.03       2.88 r
+  FMUL0/U20/Y (NBUFFX2_RVT)                               0.03       2.91 r
+  FMUL0/U29/Y (AO222X1_RVT)                               0.05       2.97 r
+  FMUL0/frac[23] (FMUL)                                   0.00       2.97 r
+  Y_reg[22]/D (DFFX1_RVT)                                 0.00       2.97 r
+  data arrival time                                                  2.97
+
+  clock clk (rise edge)                                   4.00       4.00
+  clock network delay (ideal)                             0.00       4.00
+  Y_reg[22]/CLK (DFFX1_RVT)                               0.00       4.00 r
+  library setup time                                     -0.02       3.98
+  data required time                                                 3.98
+  --------------------------------------------------------------------------
+  data required time                                                 3.98
+  data arrival time                                                 -2.97
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.01
+
+
+1

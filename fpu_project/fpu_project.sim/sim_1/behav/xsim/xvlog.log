@@ -1,0 +1,24 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/2024-1/System_Semiconductor_Design/midproject/fpu/source/FMUL.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FMUL
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/2024-1/System_Semiconductor_Design/midproject/fpu/source/adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/2024-1/System_Semiconductor_Design/midproject/fpu/source/adder_correct.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder_correct
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/2024-1/System_Semiconductor_Design/midproject/fpu/source/csa_16b.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module csa_16b
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/2024-1/System_Semiconductor_Design/midproject/fpu/source/csa_32b.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module csa_32b
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/2024-1/System_Semiconductor_Design/midproject/fpu/source/csa_8b.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module csa_8b
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/2024-1/System_Semiconductor_Design/midproject/fpu/source/fulladder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fa
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/2024-1/System_Semiconductor_Design/midproject/fpu/source/halfadder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ha
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/2024-1/System_Semiconductor_Design/midproject/fpu/source/mult.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mult
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/2024-1/System_Semiconductor_Design/midproject/fpu/mult_correct.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mult_correct
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/2024-1/System_Semiconductor_Design/midproject/fpu/source/rca_4b.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rca_4b
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/2024-1/System_Semiconductor_Design/midproject/fpu/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
