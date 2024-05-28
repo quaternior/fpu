@@ -1,0 +1,33 @@
+Warning: Design 'TOP_FMUL' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+Report : area
+Design : TOP_FMUL
+Version: Q-2019.12-SP5-5
+Date   : Mon May 27 19:41:23 2024
+****************************************
+
+Library(s) Used:
+
+    saed32rvt_ff1p16v125c (File: /data3/Class/SID/2024_1/2024_1_sid35/lib/SAED32_EDK/saed32rvt_ff1p16v125c.db)
+
+Number of ports:                           99
+Number of nets:                          2235
+Number of cells:                         1666
+Number of combinational cells:           1564
+Number of sequential cells:               101
+Number of macros/black boxes:               0
+Number of buf/inv:                        142
+Number of references:                      33
+
+Combinational area:               4946.404592
+Buf/Inv area:                      208.143938
+Noncombinational area:             659.249557
+Macro/Black Box area:                0.000000
+Net Interconnect area:            1061.846175
+
+Total cell area:                  5605.654149
+Total area:                       6667.500324
+
+Information: This design contains black box (unknown) components. (RPT-8)
+1

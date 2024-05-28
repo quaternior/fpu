@@ -1,0 +1,113 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : TOP_FMUL
+Version: Q-2019.12-SP5-5
+Date   : Mon May 27 17:39:21 2024
+****************************************
+
+Operating Conditions: ff1p16v125c   Library: saed32rvt_ff1p16v125c
+Wire Load Model Mode: enclosed
+
+  Startpoint: A_reg[2] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Y_FF_reg[22]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  TOP_FMUL           8000                  saed32rvt_ff1p16v125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  A_reg[2]/CLK (DFFX1_RVT)                 0.00       0.00 r
+  A_reg[2]/Q (DFFX1_RVT)                   0.15       0.15 f
+  U890/Y (OA22X1_RVT)                      0.04       0.19 f
+  U297/Y (INVX1_RVT)                       0.01       0.20 r
+  U166/Y (NAND2X0_RVT)                     0.10       0.30 f
+  U248/Y (OA222X1_RVT)                     0.06       0.36 f
+  U140/SO (HADDX1_RVT)                     0.04       0.39 f
+  U1084/SO (HADDX1_RVT)                    0.04       0.43 r
+  U1090/Y (AO222X1_RVT)                    0.06       0.49 r
+  U1091/Y (AO222X1_RVT)                    0.05       0.54 r
+  U1092/Y (AO222X1_RVT)                    0.05       0.59 r
+  U1093/Y (AO222X1_RVT)                    0.05       0.63 r
+  U1094/Y (AO222X1_RVT)                    0.05       0.68 r
+  U1095/Y (AO222X1_RVT)                    0.05       0.73 r
+  U1096/Y (AO222X1_RVT)                    0.05       0.78 r
+  U1097/Y (AO222X1_RVT)                    0.05       0.83 r
+  U1098/Y (AO222X1_RVT)                    0.05       0.88 r
+  U1099/Y (AO222X1_RVT)                    0.05       0.93 r
+  U1100/Y (AO222X1_RVT)                    0.05       0.97 r
+  U1101/Y (AO222X1_RVT)                    0.05       1.02 r
+  U1102/Y (AO222X1_RVT)                    0.05       1.07 r
+  U1103/Y (AO222X1_RVT)                    0.05       1.12 r
+  U1104/Y (AO222X1_RVT)                    0.05       1.17 r
+  U1105/Y (AO222X1_RVT)                    0.05       1.22 r
+  U1106/Y (AO222X1_RVT)                    0.05       1.27 r
+  U1107/Y (AO222X1_RVT)                    0.05       1.31 r
+  U1108/Y (AO222X1_RVT)                    0.05       1.36 r
+  U1146/CO (FADDX1_RVT)                    0.04       1.40 r
+  U1147/CO (FADDX1_RVT)                    0.04       1.44 r
+  U1149/CO (FADDX1_RVT)                    0.04       1.48 r
+  U1151/CO (FADDX1_RVT)                    0.04       1.51 r
+  U1153/CO (FADDX1_RVT)                    0.04       1.55 r
+  U1155/CO (FADDX1_RVT)                    0.04       1.59 r
+  U1157/CO (FADDX1_RVT)                    0.04       1.63 r
+  U1159/CO (FADDX1_RVT)                    0.04       1.66 r
+  U1161/CO (FADDX1_RVT)                    0.04       1.70 r
+  U1163/CO (FADDX1_RVT)                    0.04       1.74 r
+  U1165/CO (FADDX1_RVT)                    0.04       1.78 r
+  U1167/CO (FADDX1_RVT)                    0.04       1.81 r
+  U1169/CO (FADDX1_RVT)                    0.04       1.85 r
+  U1171/CO (FADDX1_RVT)                    0.04       1.89 r
+  U1173/CO (FADDX1_RVT)                    0.04       1.92 r
+  U1175/CO (FADDX1_RVT)                    0.04       1.96 r
+  U1177/CO (FADDX1_RVT)                    0.04       2.00 r
+  U1179/CO (FADDX1_RVT)                    0.04       2.04 r
+  U1181/CO (FADDX1_RVT)                    0.04       2.07 r
+  U1183/CO (FADDX1_RVT)                    0.04       2.11 r
+  U1185/CO (FADDX1_RVT)                    0.04       2.15 r
+  U1187/CO (FADDX1_RVT)                    0.04       2.19 r
+  U1189/CO (FADDX1_RVT)                    0.04       2.22 r
+  U1191/CO (FADDX1_RVT)                    0.04       2.26 r
+  U1109/S (FADDX1_RVT)                     0.04       2.30 r
+  U1117/CO (FADDX1_RVT)                    0.04       2.34 r
+  U1116/CO (FADDX1_RVT)                    0.04       2.38 r
+  U1115/CO (FADDX1_RVT)                    0.04       2.41 r
+  U1114/CO (FADDX1_RVT)                    0.04       2.45 r
+  U1113/CO (FADDX1_RVT)                    0.04       2.49 r
+  U1112/CO (FADDX1_RVT)                    0.04       2.52 r
+  U1111/CO (FADDX1_RVT)                    0.04       2.56 r
+  U1110/S (FADDX1_RVT)                     0.06       2.62 f
+  U99/Y (OR2X1_RVT)                        0.03       2.64 f
+  U1124/Y (AND2X1_RVT)                     0.02       2.67 f
+  U1126/Y (AND4X1_RVT)                     0.03       2.70 f
+  U1132/Y (AO22X1_RVT)                     0.02       2.72 f
+  U1144/Y (NOR2X0_RVT)                     0.02       2.75 r
+  U1145/Y (AND2X1_RVT)                     0.02       2.77 r
+  U98/Y (AND2X1_RVT)                       0.04       2.81 r
+  U1192/Y (AO222X1_RVT)                    0.05       2.86 r
+  Y_FF_reg[22]/D (DFFX1_RVT)               0.00       2.86 r
+  data arrival time                                   2.86
+
+  clock clk (rise edge)                    4.00       4.00
+  clock network delay (ideal)              0.00       4.00
+  Y_FF_reg[22]/CLK (DFFX1_RVT)             0.00       4.00 r
+  library setup time                      -0.02       3.98
+  data required time                                  3.98
+  -----------------------------------------------------------
+  data required time                                  3.98
+  data arrival time                                  -2.86
+  -----------------------------------------------------------
+  slack (MET)                                         1.12
+
+
+1

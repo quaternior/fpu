@@ -1,0 +1,84 @@
+Warning: Design 'TOP_FMUL' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : TOP_FMUL
+Version: Q-2019.12-SP5-5
+Date   : Mon May 27 19:15:42 2024
+****************************************
+
+Operating Conditions: ff1p16v125c   Library: saed32rvt_ff1p16v125c
+Wire Load Model Mode: enclosed
+
+  Startpoint: A_reg[21] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Y_FF_reg[30]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  TOP_FMUL           16000                 saed32rvt_ff1p16v125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  A_reg[21]/CLK (DFFX2_RVT)                0.00       0.00 r
+  A_reg[21]/Q (DFFX2_RVT)                  0.07       0.07 f
+  U1095/Y (INVX4_RVT)                      0.02       0.08 r
+  U963/Y (OR2X2_RVT)                       0.03       0.11 r
+  U171/Y (XOR2X2_RVT)                      0.04       0.15 f
+  U170/Y (XOR2X2_RVT)                      0.04       0.19 r
+  U262/Y (XOR2X2_RVT)                      0.04       0.22 f
+  U261/Y (XOR2X2_RVT)                      0.04       0.26 r
+  U640/Y (XOR3X1_RVT)                      0.07       0.33 f
+  U270/Y (XOR3X2_RVT)                      0.06       0.40 f
+  U573/Y (XOR3X1_RVT)                      0.06       0.46 r
+  U2116/S (FADDX1_RVT)                     0.06       0.51 f
+  U542/Y (INVX1_RVT)                       0.01       0.52 r
+  U186/Y (OR2X2_RVT)                       0.03       0.55 r
+  U490/Y (INVX1_RVT)                       0.01       0.56 f
+  U469/Y (AO21X1_RVT)                      0.02       0.58 f
+  U274/Y (INVX2_RVT)                       0.01       0.59 r
+  U456/Y (OR2X1_RVT)                       0.02       0.61 r
+  U447/Y (INVX1_RVT)                       0.01       0.62 f
+  U207/Y (OR2X1_RVT)                       0.02       0.64 f
+  U2123/Y (NAND2X0_RVT)                    0.02       0.65 r
+  U440/Y (INVX0_RVT)                       0.01       0.66 f
+  U333/Y (OR2X2_RVT)                       0.02       0.68 f
+  U329/Y (INVX2_RVT)                       0.01       0.69 r
+  U2391/Y (NAND3X0_RVT)                    0.02       0.71 f
+  U1106/Y (AOI22X1_RVT)                    0.03       0.73 r
+  U2637/Y (AO22X1_RVT)                     0.03       0.76 r
+  U1104/Y (AO21X1_RVT)                     0.02       0.78 r
+  U431/Y (AND3X1_RVT)                      0.03       0.81 r
+  U2674/Y (OA21X1_RVT)                     0.03       0.83 r
+  U350/Y (XOR2X2_RVT)                      0.04       0.87 f
+  U1608/Y (AND2X1_RVT)                     0.03       0.90 f
+  U1123/Y (AND3X1_RVT)                     0.03       0.92 f
+  U1119/Y (IBUFFX8_RVT)                    0.03       0.95 r
+  U423/Y (INVX16_RVT)                      0.00       0.96 f
+  U3170/Y (NAND2X0_RVT)                    0.02       0.97 r
+  U187/Y (XOR2X2_RVT)                      0.03       1.01 f
+  U1108/Y (AO21X1_RVT)                     0.03       1.03 f
+  Y_FF_reg[30]/D (DFFX1_RVT)               0.00       1.03 f
+  data arrival time                                   1.03
+
+  clock clk (rise edge)                    1.00       1.00
+  clock network delay (ideal)              0.00       1.00
+  Y_FF_reg[30]/CLK (DFFX1_RVT)             0.00       1.00 r
+  library setup time                      -0.03       0.97
+  data required time                                  0.97
+  -----------------------------------------------------------
+  data required time                                  0.97
+  data arrival time                                  -1.03
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -0.06
+
+
+1

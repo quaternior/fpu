@@ -1,0 +1,75 @@
+Warning: Design 'TOP_FMUL' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : TOP_FMUL
+Version: Q-2019.12-SP5-5
+Date   : Mon May 27 19:41:23 2024
+****************************************
+
+Operating Conditions: ff1p16v125c   Library: saed32rvt_ff1p16v125c
+Wire Load Model Mode: enclosed
+
+  Startpoint: A_reg[17] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Y_FF_reg[0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  TOP_FMUL           8000                  saed32rvt_ff1p16v125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  A_reg[17]/CLK (DFFX1_RVT)                0.00       0.00 r
+  A_reg[17]/Q (DFFX1_RVT)                  0.07       0.07 f
+  U552/Y (INVX2_RVT)                       0.03       0.09 r
+  U83/Y (NOR2X0_RVT)                       0.04       0.13 f
+  U1269/S (FADDX1_RVT)                     0.05       0.18 r
+  U1272/S (FADDX1_RVT)                     0.06       0.24 f
+  U1271/S (FADDX1_RVT)                     0.05       0.30 r
+  U1304/CO (FADDX1_RVT)                    0.04       0.33 r
+  U1308/CO (FADDX1_RVT)                    0.04       0.38 r
+  U85/Y (XOR2X2_RVT)                       0.04       0.41 f
+  U494/Y (XOR2X1_RVT)                      0.05       0.46 r
+  U505/Y (NOR2X0_RVT)                      0.03       0.49 f
+  U1309/Y (NOR2X0_RVT)                     0.03       0.52 r
+  U1321/Y (AOI21X1_RVT)                    0.04       0.55 f
+  U1337/Y (OAI21X2_RVT)                    0.04       0.59 r
+  U8/Y (INVX1_RVT)                         0.01       0.60 f
+  U1341/Y (OA21X1_RVT)                     0.02       0.62 f
+  U1342/Y (OAI21X2_RVT)                    0.04       0.66 r
+  U556/Y (INVX1_RVT)                       0.02       0.68 f
+  U1386/Y (OA21X1_RVT)                     0.02       0.70 f
+  U623/Y (XOR2X1_RVT)                      0.04       0.74 r
+  U1391/Y (NAND2X0_RVT)                    0.02       0.76 f
+  U1393/Y (NOR2X0_RVT)                     0.03       0.79 r
+  U624/Y (AOI21X1_RVT)                     0.04       0.82 f
+  U544/Y (XNOR2X1_RVT)                     0.04       0.86 f
+  U1401/Y (NAND2X0_RVT)                    0.02       0.88 r
+  U627/Y (OR2X1_RVT)                       0.03       0.91 r
+  U628/Y (INVX1_RVT)                       0.04       0.95 f
+  U1439/Y (AO22X1_RVT)                     0.03       0.98 f
+  Y_FF_reg[0]/D (DFFX1_RVT)                0.00       0.98 f
+  data arrival time                                   0.98
+
+  clock clk (rise edge)                    1.00       1.00
+  clock network delay (ideal)              0.00       1.00
+  Y_FF_reg[0]/CLK (DFFX1_RVT)              0.00       1.00 r
+  library setup time                      -0.02       0.98
+  data required time                                  0.98
+  -----------------------------------------------------------
+  data required time                                  0.98
+  data arrival time                                  -0.98
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+1
