@@ -1,12 +1,12 @@
 //CLA
 //No Cout, Cin
 module adder (
-    input [47:0] A,
-    input [47:0] B,
-    output [47:0] Sum
+    input [46:0] A,
+    input [46:0] B,
+    output [46:0] Sum
 );
-    wire [47:0] G, P;
-    wire [48:0] C;
+    wire [46:0] G, P;
+    wire [47:0] C;
     wire Cin = 1'b0;
     GP_Generate gp_gen (
         .A(A),
@@ -22,5 +22,5 @@ module adder (
         .C(C)
     );
 
-    assign Sum = A ^ B ^ C[47:0]; 
+    assign Sum = A ^ B ^ C[46:0]; 
 endmodule

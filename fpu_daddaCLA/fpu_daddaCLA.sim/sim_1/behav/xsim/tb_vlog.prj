@@ -1,6 +1,9 @@
 # compile verilog/system verilog design source files
 verilog xil_defaultlib  \
+"../../../../../source/dadda_CLA/CLA_logic.v" \
 "../../../../../source/dadda_CLA/FMUL.v" \
+"../../../../../source/dadda_CLA/GP_Generate.v" \
+"../../../../../source/dadda_CLA/adder.v" \
 "../../../../../source/dadda_CLA/dadda.v" \
 "../../../../../tb.v" \
 

@@ -3,11 +3,15 @@ Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
 Running: D:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto cdfc1155ead94403aa93e49901ff45f2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 46 differs from formal bit length 47 for port A [D:/2024-1/System_Semiconductor_Design/midproject/fpu/source/dadda_CLA/dadda.v:35]
 Completed static elaboration
 Starting simulation data flow analysis
 WARNING: [XSIM 43-4100] "D:/2024-1/System_Semiconductor_Design/midproject/fpu/fpu_daddaCLA/fpu_daddaCLA.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.GP_Generate
+Compiling module xil_defaultlib.CLA_Logic
+Compiling module xil_defaultlib.adder
 Compiling module xil_defaultlib.dadda_mult
 Compiling module xil_defaultlib.FMUL
 Compiling module xil_defaultlib.tb

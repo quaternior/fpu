@@ -1,8 +1,12 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/2024-1/System_Semiconductor_Design/midproject/fpu/source/dadda_CLA/CLA_logic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CLA_Logic
 INFO: [VRFC 10-2263] Analyzing Verilog file "D:/2024-1/System_Semiconductor_Design/midproject/fpu/source/dadda_CLA/FMUL.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module FMUL
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/2024-1/System_Semiconductor_Design/midproject/fpu/source/dadda_CLA/GP_Generate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module GP_Generate
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/2024-1/System_Semiconductor_Design/midproject/fpu/source/dadda_CLA/adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder
 INFO: [VRFC 10-2263] Analyzing Verilog file "D:/2024-1/System_Semiconductor_Design/midproject/fpu/source/dadda_CLA/dadda.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module dadda_mult
 INFO: [VRFC 10-2263] Analyzing Verilog file "D:/2024-1/System_Semiconductor_Design/midproject/fpu/tb.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/2024-1/System_Semiconductor_Design/midproject/fpu/fpu_daddaCLA/fpu_daddaCLA.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module glbl
