@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/2024-1/System_Semiconductor_Design/midproject/fpu/source/pattern_generator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pattern_generator
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/2024-1/System_Semiconductor_Design/midproject/fpu/Goldentest.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Goldentest

@@ -1,0 +1,14 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../../source/wallace_CLA/CLA_logic.v" \
+"../../../../../source/wallace_CLA/FMUL.v" \
+"../../../../../source/wallace_CLA/GP_Generate.v" \
+"../../../../../source/wallace_CLA/adder.v" \
+"../../../../../source/wallace_CLA/mult.v" \
+"../../../../../tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

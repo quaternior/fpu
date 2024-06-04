@@ -1,0 +1,31 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Tue Jun  4 13:38:26 2024
+# Process ID: 4080
+# Current directory: D:/2024-1/System_Semiconductor_Design/midproject/fpu/fpu_daddaCLA
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11836 D:\2024-1\System_Semiconductor_Design\midproject\fpu\fpu_daddaCLA\fpu_daddaCLA.xpr
+# Log file: D:/2024-1/System_Semiconductor_Design/midproject/fpu/fpu_daddaCLA/vivado.log
+# Journal file: D:/2024-1/System_Semiconductor_Design/midproject/fpu/fpu_daddaCLA\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/2024-1/System_Semiconductor_Design/midproject/fpu/fpu_daddaCLA/fpu_daddaCLA.xpr
+update_compile_order -fileset sources_1
+close_project
+create_project fpu_wallace_CLA D:/2024-1/System_Semiconductor_Design/midproject/fpu/fpu_wallace_CLA -part xc7vx485tffg1157-1
+add_files -norecurse {D:/2024-1/System_Semiconductor_Design/midproject/fpu/source/wallace_CLA/adder.v D:/2024-1/System_Semiconductor_Design/midproject/fpu/source/wallace_CLA/CLA_logic.v D:/2024-1/System_Semiconductor_Design/midproject/fpu/source/wallace_CLA/mult.v D:/2024-1/System_Semiconductor_Design/midproject/fpu/source/wallace_CLA/TOP_FMUL.v D:/2024-1/System_Semiconductor_Design/midproject/fpu/source/wallace_CLA/GP_Generate.v D:/2024-1/System_Semiconductor_Design/midproject/fpu/source/wallace_CLA/FMUL.v}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse D:/2024-1/System_Semiconductor_Design/midproject/fpu/tb.v
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+source tb.tcl

@@ -48,12 +48,12 @@ module tb;
         .overflow(overflow)
     );
     initial begin
-        fp_result = $fopen("result.txt", "w");
+        fp_result = $fopen("../../../../../result.txt", "w");
         $fmonitor(fp_result, "%d : %h %h %h",i, A, B, result_bit);
     end
     
     initial begin
-        fp_pattern = $fopen ("pattern.txt", "r");
+        fp_pattern = $fopen ("../../../../../pattern.txt", "r");
         continue = 1;
         while(continue) begin
             r = $fscanf(fp_pattern, "%h %h", A, B);
