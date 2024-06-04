@@ -71,7 +71,7 @@ module FMUL(
     // 2. Fraction multiplying
     wire [36:0] c1, c2;
     mult partial_prod_1(c1, {1'b1, A_frac}, B_frac[11:0]);
-    mult partial_prod_2(c2, {1'b1, B_frac[22:12]});
+    mult partial_prod_2(c2, {1'b1, A_frac}, {1'b1, B_frac[22:12]});
     assign partial_frac = (c1 << 12) + c2;
     // 3. Assign
     assign sign = A_sign ^ B_sign;
