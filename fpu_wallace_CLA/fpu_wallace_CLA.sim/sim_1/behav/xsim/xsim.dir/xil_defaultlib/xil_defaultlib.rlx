@@ -7,5 +7,5 @@ D:/2024-1/System_Semiconductor_Design/midproject/fpu/source/wallace_CLA/CLA_logi
 D:/2024-1/System_Semiconductor_Design/midproject/fpu/source/wallace_CLA/FMUL.v,1717320000,verilog,,D:/2024-1/System_Semiconductor_Design/midproject/fpu/source/wallace_CLA/GP_Generate.v,,FMUL,,,,,,,,
 D:/2024-1/System_Semiconductor_Design/midproject/fpu/source/wallace_CLA/GP_Generate.v,1717476350,verilog,,D:/2024-1/System_Semiconductor_Design/midproject/fpu/source/wallace_CLA/adder.v,,GP_Generate,,,,,,,,
 D:/2024-1/System_Semiconductor_Design/midproject/fpu/source/wallace_CLA/adder.v,1717476276,verilog,,D:/2024-1/System_Semiconductor_Design/midproject/fpu/source/wallace_CLA/mult.v,,adder,,,,,,,,
-D:/2024-1/System_Semiconductor_Design/midproject/fpu/source/wallace_CLA/mult.v,1717476292,verilog,,D:/2024-1/System_Semiconductor_Design/midproject/fpu/tb.v,,mult,,,,,,,,
-D:/2024-1/System_Semiconductor_Design/midproject/fpu/tb.v,1717476535,verilog,,,,tb,,,,,,,,
+D:/2024-1/System_Semiconductor_Design/midproject/fpu/source/wallace_CLA/mult.v,1717480390,verilog,,D:/2024-1/System_Semiconductor_Design/midproject/fpu/tb.v,,mult,,,,,,,,
+D:/2024-1/System_Semiconductor_Design/midproject/fpu/tb.v,1717480615,verilog,,,,tb,,,,,,,,

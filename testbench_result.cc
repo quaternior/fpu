@@ -27,8 +27,8 @@ int main(){
     while (std::getline(fp, line)) {
         std::istringstream iss(line);
         while ((testmode) ? (iss >> std::hex >> a_bit >> b_bit >> Sel >> ysim_bit)
-                        : (iss >> std::hex >> a_bit >> b_bit)) {
-            Sel = 2;
+                        : (iss >> std::hex >> a_bit >> b_bit >> Sel)) {
+            //Sel = 2;
             //Set operator
             switch (Sel)
             {
@@ -60,9 +60,9 @@ int main(){
                     << std::setw(12) << std::hex << std::showbase << y_bit
                     << std::setw(12) << std::dec << *a
                     << " " << op << " "
-                    << std::setw(12) << *b
+                    << std::setw(13) << *b
                     << " = "
-                    << std::setw(12) << *y;
+                    << std::setw(13) << *y;
                     if(testmode){
                         std::cout << "(Simulation)"
                         << std::setw(12) << *ysim

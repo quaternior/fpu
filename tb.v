@@ -23,6 +23,7 @@ module tb;
     reg continue;
     reg [31:0] A;
     reg [31:0] B;
+    reg [1:0] Sel;
     //IEEE754-to-real converter
     //Result don't considers rounding
 //   always@(*) begin
@@ -56,7 +57,7 @@ module tb;
         fp_pattern = $fopen ("../../../../../pattern.txt", "r");
         continue = 1;
         while(continue) begin
-            r = $fscanf(fp_pattern, "%h %h", A, B);
+            r = $fscanf(fp_pattern, "%h %h %d", A, B, Sel);
             {A_sign, A_exp, A_frac} = A;
             {B_sign, B_exp, B_frac} = B;
             if(r==-1) begin
