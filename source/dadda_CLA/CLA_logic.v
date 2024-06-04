@@ -1,8 +1,8 @@
 module CLA_Logic (
-    input [47:0] G,
-    input [47:0] P,
+    input [45:0] G,
+    input [45:0] P,
     input Cin,
-    output [48:0] C
+    output [46:0] C
 );
     assign C[0] = Cin;
     genvar i;
