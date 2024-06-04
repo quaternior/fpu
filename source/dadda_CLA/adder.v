@@ -24,5 +24,5 @@ module adder (
     );
 
     assign Sum = A ^ B ^ C[45:0]; 
-    assign Cout = C[46];           // 최종 Carry out
+    assign Cout = C[46];
 endmodule

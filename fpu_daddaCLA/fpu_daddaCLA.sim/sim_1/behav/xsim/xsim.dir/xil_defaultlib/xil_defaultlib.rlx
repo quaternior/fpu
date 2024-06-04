@@ -3,8 +3,8 @@
 Jun 14 2018
 20:41:02
 D:/2024-1/System_Semiconductor_Design/midproject/fpu/fpu_daddaCLA/fpu_daddaCLA.sim/sim_1/behav/xsim/glbl.v,1529022455,verilog,,,,glbl,,,,,,,,
-D:/2024-1/System_Semiconductor_Design/midproject/fpu/source/dadda_CLA/CLA_logic.v,1717381666,verilog,,D:/2024-1/System_Semiconductor_Design/midproject/fpu/source/dadda_CLA/FMUL.v,,CLA_Logic,,,,,,,,
-D:/2024-1/System_Semiconductor_Design/midproject/fpu/source/dadda_CLA/FMUL.v,1717318832,verilog,,D:/2024-1/System_Semiconductor_Design/midproject/fpu/source/dadda_CLA/GP_Generate.v,,FMUL,,,,,,,,
+D:/2024-1/System_Semiconductor_Design/midproject/fpu/source/dadda_CLA/CLA_logic.v,1717488730,verilog,,D:/2024-1/System_Semiconductor_Design/midproject/fpu/source/dadda_CLA/FMUL.v,,CLA_Logic,,,,,,,,
+D:/2024-1/System_Semiconductor_Design/midproject/fpu/source/dadda_CLA/FMUL.v,1717482331,verilog,,D:/2024-1/System_Semiconductor_Design/midproject/fpu/source/dadda_CLA/GP_Generate.v,,FMUL,,,,,,,,
 D:/2024-1/System_Semiconductor_Design/midproject/fpu/source/dadda_CLA/GP_Generate.v,1717381655,verilog,,D:/2024-1/System_Semiconductor_Design/midproject/fpu/source/dadda_CLA/adder.v,,GP_Generate,,,,,,,,
 D:/2024-1/System_Semiconductor_Design/midproject/fpu/source/dadda_CLA/adder.v,1717381647,verilog,,D:/2024-1/System_Semiconductor_Design/midproject/fpu/source/dadda_CLA/dadda.v,,adder,,,,,,,,
 D:/2024-1/System_Semiconductor_Design/midproject/fpu/source/dadda_CLA/dadda.v,1717381626,verilog,,D:/2024-1/System_Semiconductor_Design/midproject/fpu/tb.v,,dadda_mult,,,,,,,,

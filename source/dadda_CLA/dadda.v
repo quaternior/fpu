@@ -32,7 +32,12 @@ wire [47:0] L7[22:0];
 
 //45-bit adder
 assign product[0] = L7[0][0];
-adder adder_inst(L7[0][46:1], L7[1][46:1], product[46:1], product[47]);
+adder adder_inst(
+    .A(L7[0][46:1]),
+    .B(L7[1][46:1]), 
+    .Sum(product[46:1]), 
+    .Cout(product[47])
+    );
 
 assign L1[0][0] = partial_products[0][0];
 
