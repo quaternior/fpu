@@ -20,10 +20,10 @@ module FMUL(
     reg primal;
     reg [7:0] primal_exp;
     reg [23:0] primal_frac;
-    // wire A_is_nan = &A_exp & |A_frac;
+    wire A_is_nan = &A_exp & |A_frac;
     wire A_is_inf = &A_exp & ~|A_frac;
     wire A_is_zero = ~|A_exp;                   //Since denormalized number is regarded as 0, just consider about exp only.
-    // wire B_is_nan = &B_exp & |B_frac;
+    wire B_is_nan = &B_exp & |B_frac;
     wire B_is_inf = &B_exp & ~|B_frac;
     wire B_is_zero = ~|B_exp;
     
@@ -43,12 +43,12 @@ module FMUL(
             primal_frac = 0;
             error = 0;
         end
-        // else if(A_is_nan | B_is_nan) begin
-        //     primal = 1;
-        //     primal_exp = 8'hff;
-        //     primal_frac = 24'h800000;
-        //     error = 1;
-        // end
+        else if(A_is_nan | B_is_nan) begin
+            primal = 1;
+            primal_exp = 8'hff;
+            primal_frac = 24'h800000;
+            error = 1;
+        end
         else if( (A_is_inf & B_is_zero) || (A_is_zero & B_is_inf) ) begin
             primal = 1;
             primal_exp = 8'hff;
