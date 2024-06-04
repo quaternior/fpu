@@ -11,7 +11,7 @@ module TOP_FDIV(
     wire [31:0] Y;
     wire rd;
     wire error, overflow;
-    FDIV FDIV_inst(clk, A[31], A[30:23], A[22:0], B[31], B[30:23], B[22:0], 
+    FDIV_sub FDIV_inst(clk, A[31], A[30:23], A[22:0], B[31], B[30:23], B[22:0], 
         Y[31], Y[30:23], {Y[22:0], rd}, error, overflow);
     
     always@(posedge clk) begin
