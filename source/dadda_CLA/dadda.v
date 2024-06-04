@@ -1,5 +1,5 @@
 // Dadda mult
-module dadda_mult(
+module mult(
     output [47:0] product,
     input [23:0] A, B
 );

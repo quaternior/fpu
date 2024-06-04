@@ -69,7 +69,7 @@ module FMUL(
         end
     end
     // 2. Fraction multiplying
-    dadda_mult partial_prod(partial_frac, {1'b1, A_frac}, {1'b1, B_frac});
+    mult partial_prod(partial_frac, {1'b1, A_frac}, {1'b1, B_frac});
     // 3. Assign
     assign sign = A_sign ^ B_sign;
     // For sufficient number of space. If underflow occurs, put 0.
