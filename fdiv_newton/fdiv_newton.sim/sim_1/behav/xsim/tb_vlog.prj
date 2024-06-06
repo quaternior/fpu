@@ -1,0 +1,12 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../../source/DIV_newton/FDIV.v" \
+"../../../../../source/DIV_newton/newton.v" \
+"../../../../../source/DIV_newton/rom.v" \
+"../../../../fdiv_newton.srcs/sources_1/imports/fpu/tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

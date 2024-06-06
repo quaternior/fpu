@@ -65,12 +65,12 @@ module FDIV(
 	
 	assign frac_temp = A_temp/B_temp;
 	
-	assign frac_result = frac_temp << ~frac_temp[24];
+	assign frac_result = (frac_temp[24]) ? frac_temp[24:1] : frac_temp[23:0];
 	
-	assign R_frac = (primal) ? primal_frac : frac_result[23:1]; //1.frac_A / 1.frac_B = 1.frac_R
+	assign R_frac = (primal) ? primal_frac : frac_result; //1.frac_A / 1.frac_B = 1.frac_R
 	assign frac = (overflow | zero) ? 24'h000000 : R_frac;
 	
-	assign R_exp = (primal) ? primal_exp : A_exp - B_exp - frac_temp[23] + `exp_bias;
+	assign R_exp = (primal) ? primal_exp : A_exp - B_exp - frac_temp[24] + `exp_bias;
 	assign exp = (overflow) ? 8'hff : ((zero) ? 8'h00 : R_exp);
 
 	

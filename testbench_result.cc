@@ -11,7 +11,7 @@ int main(){
     bool is_correct, testmode;
     int Sel;
     int i=1;
-    ifstream fp;
+    ifstream fp, fp_r;
     
     a = (float*)&atmp_bit;
     b = (float*)&btmp_bit;
@@ -21,23 +21,31 @@ int main(){
     is_correct = true;
     testmode = false;
     fp.open("pattern_gb.txt");
+    fp_r.open("result.csv");
 
     std::string line;
     while (std::getline(fp, line)) {
         std::istringstream iss(line);
-        while ((testmode) ? (iss >> std::hex >> a_bit >> b_bit >> Sel >> ysim_bit)
-                        : (iss >> std::hex >> a_bit >> b_bit >> Sel)) {
-
+        while (iss >> std::hex >> a_bit >> b_bit >> Sel) {
+            if(testmode){
+                string str_buf;
+                for(int i=0;i<3;i++){
+                    getline(fp_r,str_buf,',');
+                }
+                ysim_bit = stoi(str_buf); 
+            }
             //Storing the temp bits
             atmp_bit = a_bit;
             btmp_bit = b_bit;
-            if (((atmp_bit >> 23) & 0x7f) == 0){
+            // Set denormalized number to 0
+            if (((atmp_bit >> 23) & 0xff) == 0){
                 atmp_bit = atmp_bit & (0x0 + (1 << 31));
             }
-            if (((btmp_bit >> 23) & 0x7f) == 0){
+            if (((btmp_bit >> 23) & 0xff) == 0){
                 btmp_bit = btmp_bit & (0x0 + (1 << 31));
             }
             //Set operator
+            Sel = 3;
             switch (Sel)
             {
                 case 0:
@@ -59,7 +67,7 @@ int main(){
                 default:
                     return 1;
             } 
-            if (((y_bit >> 23) & 0x7f) == 0){
+            if (((y_bit >> 23) & 0xff) == 0){
                 y_bit = y_bit & (0x0 + (1 << 31));
             }
             //Print all
@@ -74,7 +82,8 @@ int main(){
                     << std::setw(13) << *y;
                     if(testmode){
                         std::cout << "(Simulation)"
-                        << std::setw(12) << *ysim
+                        << std::setw(12) << std::hex << ysim_bit
+                        << std::setw(13) << *ysim
                         << std::setw(8) << std::boolalpha << is_correct;
                     }
                     std::cout << std::endl;

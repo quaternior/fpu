@@ -34,27 +34,28 @@ int main(){
             if ((b_bit >> 23) & 0x7f == 0)
                 b_bit = b_bit & (0x7fffff + (1 << 31));
             //Set operator
-            switch (Sel)
-            {
-                case 0:
-                    op = '+';
-                    *y = (*a) + (*b);
-                    break;
-                case 1:
-                    op = '-';
-                    *y = (*a) - (*b);
-                    break;
-                case 2:
-                    op = '*';
-                    *y = (*a) * (*b);
-                    break;
-                case 3:
-                    op = '/';
-                    *y = (*a) / (*b);
-                    break;
-                default:
-                    return 1;
-            }
+            Sel = 3;
+            // switch (Sel)
+            // {
+            //     case 0:
+            //         op = '+';
+            //         *y = (*a) + (*b);
+            //         break;
+            //     case 1:
+            //         op = '-';
+            //         *y = (*a) - (*b);
+            //         break;
+            //     case 2:
+            //         op = '*';
+            //         *y = (*a) * (*b);
+            //         break;
+            //     case 3:
+            //         op = '/';
+            //         *y = (*a) / (*b);
+            //         break;
+            //     default:
+            //         return 1;
+            // }
             //Print all
             std::cout << std::setw(8) << i++
                     << std::setw(12) << std::hex << std::showbase << a_bit

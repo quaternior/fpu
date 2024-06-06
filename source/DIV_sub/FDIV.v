@@ -1,6 +1,7 @@
 `define exp_max 255
 `define exp_bias 127
 module FDIV_sub(
+	input clk,
 	input A_sign, 
 	input [7:0] A_exp, 
 	input [22:0] A_frac,

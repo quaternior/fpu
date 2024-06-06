@@ -1,0 +1,9 @@
+0.6
+2018.2
+Jun 14 2018
+20:41:02
+D:/2024-1/System_Semiconductor_Design/midproject/fpu/fdiv_bhv/fdiv_bhv.sim/sim_1/behav/xsim/glbl.v,1529022455,verilog,,,,glbl,,,,,,,,
+D:/2024-1/System_Semiconductor_Design/midproject/fpu/fdiv_bhv/fdiv_bhv.srcs/sim_1/new/tb.v,1717661547,verilog,,,,tb,,,,,,,,
+D:/2024-1/System_Semiconductor_Design/midproject/fpu/source/DIV_sub/FDIV.v,1717506237,verilog,,D:/2024-1/System_Semiconductor_Design/midproject/fpu/source/DIV_sub/part_DIV.v,,FDIV_sub,,,,,,,,
+D:/2024-1/System_Semiconductor_Design/midproject/fpu/source/DIV_sub/TOP_FDIV.v,1717502975,verilog,,,,TOP_FDIV,,,,,,,,
+D:/2024-1/System_Semiconductor_Design/midproject/fpu/source/DIV_sub/part_DIV.v,1717505812,verilog,,D:/2024-1/System_Semiconductor_Design/midproject/fpu/fdiv_bhv/fdiv_bhv.srcs/sim_1/new/tb.v,,part_DIV,,,,,,,,
