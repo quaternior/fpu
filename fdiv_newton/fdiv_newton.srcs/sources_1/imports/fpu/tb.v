@@ -24,6 +24,7 @@ module tb;
     reg [31:0] A;
     reg [31:0] B;
     reg [1:0] Sel;
+    reg [1:0] rnd;
     //IEEE754-to-real converter
     //Result don't considers rounding
 //   always@(*) begin
@@ -57,16 +58,16 @@ module tb;
         fp_pattern = $fopen ("../../../../../pattern_gb.txt", "r");
         continue = 1;
         while(continue) begin
-            r = $fscanf(fp_pattern, "%h %h %d", A, B, Sel);
+            r = $fscanf(fp_pattern, "%h %h %d %d", A, B, Sel, rnd);
             {A_sign, A_exp, A_frac} = A;
             {B_sign, B_exp, B_frac} = B;
             if(r==-1) begin
                 continue = 0;
             end
-            else begin
+            else if(Sel==3) begin
                 i = i+1;
+                #2;
             end
-            #2;
         end
         $fclose(fp_pattern);
         $fclose(fp_result);

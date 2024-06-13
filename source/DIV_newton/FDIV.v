@@ -20,10 +20,10 @@ module FDIV(
 	wire [7:0] R_exp;
 	wire [26:0] frac_temp, frac_result;
 	
-	wire A_is_zero = ~(|A_exp | |A_frac); // A = 0 case
+	wire A_is_zero = ~|A_exp; // A = 0 case
 	wire A_is_inf = &A_exp & ~|A_frac; // A = inf case
 	
-	wire B_is_zero = ~(|B_exp | |B_frac); // B = 0 case
+	wire B_is_zero = ~|B_exp; // B = 0 case
 	wire B_is_inf = &B_exp & ~|B_frac; // B = inf case`
 	wire zero;
 	

@@ -1,4 +1,4 @@
-module pattern_generator(Clock,Reset,A,B,Sel,round, start, Error, Overflow, Y, genonly);
+module pattern_generator(Clock,Reset,A,B,Sel,round, start, Error, Overflow, Y, genonly, FIN);
 	input Clock, Reset;
 	input [31:0] A, B;
 	input [1:0] Sel;
@@ -7,24 +7,29 @@ module pattern_generator(Clock,Reset,A,B,Sel,round, start, Error, Overflow, Y, g
     input [31:0] Y;
     input Error, Overflow;
     input genonly;
+    input FIN;
 
     integer cnt, fp;
     initial begin
         if(genonly) begin
-            $fmonitor(fp, "%x %x %d", A, B, Sel);
+            $fmonitor(fp, "%x %x %d %d", A, B, Sel, round);
         end
     end
     
     initial begin
         fp = $fopen("pattern.txt");
-        #1000 $fclose(fp);
+    end
+    
+    always@(FIN) begin
+        if(FIN)
+            $fclose(fp);
     end
 
     always@(posedge Clock) begin
         if(!genonly) begin
             if(start)
                 cnt = cnt + 1;
-            $fwrite(fp, "%x %x %d %x", A, B, Sel, Y);
+            $fwrite(fp, "%x %x %d %d %x", A, B, Sel, round, Y);
         end
     end
 endmodule

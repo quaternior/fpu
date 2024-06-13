@@ -1,23 +1,32 @@
+// Testbench simulator
+// testbench input(pattern_gb.txt) : https://drive.google.com/file/d/1Zkq45o3-k0cCtrM2VI0kPcruUauPl-Q7/view?usp=sharing
 #include <iostream>
 #include <fstream>
 #include <string>
 #include <iomanip>
+#include <cfenv>
+
+// setting rounding mode
+#pragma STDC FENV_ACCESS ON
 
 using namespace std;
 int main(){
+    // Declaration of variables, filestream
     float *a, *b, *y, *ysim;
-    unsigned int a_bit, atmp_bit, b_bit, btmp_bit, y_bit, ysim_bit;
+    unsigned int a_bit, atmp_bit, b_bit, btmp_bit, y_bit, ysim_bit, Sel, rnd;
     char op;
     bool is_correct, testmode;
-    int Sel;
     int i=1;
     ifstream fp, fp_r;
     
+    // Reference the direct bits
     a = (float*)&atmp_bit;
     b = (float*)&btmp_bit;
     y = (float*)&y_bit;
     ysim = (float*)&ysim_bit;
 
+    // If testmode enable, code can test whether it is right or false
+    // EX)
     is_correct = true;
     testmode = false;
     fp.open("pattern_gb.txt");
@@ -26,7 +35,7 @@ int main(){
     std::string line;
     while (std::getline(fp, line)) {
         std::istringstream iss(line);
-        while (iss >> std::hex >> a_bit >> b_bit >> Sel) {
+        while (iss >> std::hex >> a_bit >> b_bit >> Sel >> rnd) {
             if(testmode){
                 string str_buf;
                 for(int i=0;i<3;i++){
@@ -45,26 +54,46 @@ int main(){
                 btmp_bit = btmp_bit & (0x0 + (1 << 31));
             }
             //Set operator
-            Sel = 3;
+            switch(rnd){
+                case 0: //Rounding up
+                    fesetround(FE_UPWARD);
+                    break;
+                case 1: //Rounding down
+                    fesetround(FE_DOWNWARD);
+                    break;
+                case 2: //Rounding ties to even(towards to zero)
+                    fesetround(FE_TOWARDZERO);
+                    break;
+                case 3: //Rounding ties aways from zero
+                    fesetround(FE_TONEAREST);
+                    break;
+                default:
+                    cout << "Undefined round mode";
+                    return 1;
+            }
             switch (Sel)
             {
                 case 0:
                     op = '+';
                     *y = (*a) + (*b);
+                    continue;
                     break;
                 case 1:
                     op = '-';
                     *y = (*a) - (*b);
+                    continue;
                     break;
                 case 2:
                     op = '*';
                     *y = (*a) * (*b);
+                    continue;
                     break;
                 case 3:
                     op = '/';
                     *y = (*a) / (*b);
                     break;
                 default:
+                    cout << "Undefined operator(Sel)";
                     return 1;
             } 
             if (((y_bit >> 23) & 0xff) == 0){

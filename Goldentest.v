@@ -10,9 +10,12 @@ module Goldentest;
 	wire Overflow, Error;
 	parameter STEP=5;
 	
+	//Added for generate pattern
+	reg FIN = 0;
+	
 	//FPU FPU(Clock,Reset,A,B,Sel,round, start, Error,Overflow,Y);
 	reg genonly = 1;
-	pattern_generator pg_inst(Clock,Reset,A,B,Sel,round, start, Error, Overflow,Y, genonly);
+	pattern_generator pg_inst(Clock,Reset,A,B,Sel,round, start, Error, Overflow,Y, genonly, FIN);
 
 	initial begin
 		$monitor($time, "A = %b, B = %b, Sel = %b, Y = %b, Overflow = %b, Error = %b", A, B, Sel, Y, Overflow, Error);
@@ -620,6 +623,9 @@ module Goldentest;
 		repeat(10)@(negedge Clock);
 	 
 		repeat(200)@(negedge Clock);
+		
+		FIN = 1;
+		#STEP
 		$stop;
 	end
 
